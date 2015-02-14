@@ -1,10 +1,8 @@
 set path=%path%;D:\Android\platform-tools;D:\Android\tools
 
-java -jar apktoos.jar -b 폴더
+java -jar apktool.jar d easy_oneshot.apk
 
-java -jar apktool.jar d 파일.apk
-
-java -jar apktoos.jar b 폴더
+java -jar apktool.jar b easy_oneshot
 
 jarsigner -keystore android.keystore easy_oneshot.apk androidKey
 
